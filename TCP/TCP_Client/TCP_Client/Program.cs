@@ -13,7 +13,7 @@ namespace TCP_Client
         static void Main(string[] args)
         {
             int port = 1234;
-            string ipAddr = "192.168.86.30";//args[0];
+            string ipAddr = args[0];
 
             TcpClient client = new TcpClient(ipAddr, port);
 
