@@ -21,7 +21,6 @@ namespace TCP_Server
         {
             _ipAddress = IPAddress.Parse("192.168.86.30");
             _server = new TcpListener(_ipAddress, _port);
-            
         }
 
         public async void StartListeningForTcpClient()
@@ -53,8 +52,6 @@ namespace TCP_Server
             TcpClient incomingClient = (TcpClient) obj;
 
             Console.WriteLine("New connection from " + incomingClient.Client.RemoteEndPoint);
-
-            Thread.Sleep(5000);
 
             NetworkStream networkStream = incomingClient.GetStream();
 
