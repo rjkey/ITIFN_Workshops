@@ -1,0 +1,7 @@
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\obj\Debug\TCP_Client.csprojAssemblyReference.cache
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\obj\Debug\TCP_Client.csproj.CoreCompileInputs.cache
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\bin\Debug\TCP_Client.exe.config
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\bin\Debug\TCP_Client.exe
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\bin\Debug\TCP_Client.pdb
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\obj\Debug\TCP_Client.exe
+D:\ITIFN_Workshops\TCP\TCP_Client\TCP_Client\obj\Debug\TCP_Client.pdb

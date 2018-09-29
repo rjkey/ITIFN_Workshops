@@ -1,0 +1,7 @@
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe.config
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\bin\Debug\TCP_Server.exe
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\bin\Debug\TCP_Server.pdb
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\obj\Debug\TCP_Server.csprojAssemblyReference.cache
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\obj\Debug\TCP_Server.csproj.CoreCompileInputs.cache
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\obj\Debug\TCP_Server.exe
+D:\ITIFN_Workshops\TCP\TCP_Server\TCP_Server\obj\Debug\TCP_Server.pdb
