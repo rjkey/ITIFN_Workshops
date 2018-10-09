@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace tptcpserver
+namespace TCP_Server
 {
     /// <summary>
     /// ITIFN E18
@@ -13,18 +13,20 @@ namespace tptcpserver
     public class TcpServer
     {
         private readonly TcpListener _server;
-        private readonly int _port = 37;
+        private readonly int _port = 1234;
+        private readonly IPAddress _ipAddress;
         private bool _running = false;
 
         public TcpServer()
         {
-            _server = new TcpListener(IPAddress.Any,_port);
+            _ipAddress = IPAddress.Parse("192.168.86.30");
+            _server = new TcpListener(_ipAddress, _port);
         }
 
         public async void StartListeningForTcpClient()
         {
             _server.Start();
-            Console.WriteLine("TCP server started at " + _server.LocalEndpoint);
+            Console.WriteLine("TCP server started at " + _ipAddress + ":" + _port);
             _running = true;
             await AcceptIncomingConnections();
         }
@@ -32,7 +34,7 @@ namespace tptcpserver
         public void StopListeningForTcpClient()
         {
             _running = false;
-            _server.Stop();
+            _server.Stop();      
         }
 
         private async Task AcceptIncomingConnections()
@@ -41,13 +43,13 @@ namespace tptcpserver
             {
                 TcpClient incomingClient = await _server.AcceptTcpClientAsync();
                 Thread t = new Thread(HandleIncomingConnection);
-                t.Start(incomingClient);
+                t.Start(incomingClient);              
             }
         }
 
         public void HandleIncomingConnection(object obj)
         {
-            TcpClient incomingClient = (TcpClient)obj;
+            TcpClient incomingClient = (TcpClient) obj;
 
             Console.WriteLine("New connection from " + incomingClient.Client.RemoteEndPoint);
 
@@ -55,7 +57,7 @@ namespace tptcpserver
 
             DateTime now = DateTime.Now;
 
-            int timestamp = (int)now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            int timestamp = (int) now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
 
             Console.WriteLine("Timestamp " + timestamp + " sent to client. Readable for humans this is the date " +
                               now);
