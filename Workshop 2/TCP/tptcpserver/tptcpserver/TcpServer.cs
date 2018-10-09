@@ -13,7 +13,7 @@ namespace tptcpserver
     public class TcpServer
     {
         private readonly TcpListener _server;
-        private readonly int _port = 1234;
+        private readonly int _port = 37;
         private readonly IPAddress _ipAddress;
         private bool _running = false;
 
