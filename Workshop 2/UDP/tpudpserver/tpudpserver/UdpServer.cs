@@ -30,7 +30,7 @@ namespace tpudpserver
                     EndPoint endPoint = new IPEndPoint(IPAddress.Any, PortNumber);
                     byte[] buffer = new byte[256];
                     //Blocking call - listening for UDP datagrams on port 37
-                    Console.Write("Listening on port 37");
+                    Console.WriteLine("Listening on port 37");
                     var bytesReceived = _serverSocket.ReceiveFrom(buffer, ref endPoint);
                     Console.WriteLine("Received call");
                     if (bytesReceived == 0)
