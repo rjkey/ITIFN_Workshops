@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Net;
-using System.Net.Sockets;
 
-namespace TCP_Server
+namespace tptcpserver
 {
     class Program
     {
@@ -25,7 +23,7 @@ namespace TCP_Server
                         Console.WriteLine("Server stopped.");
                         break;
                 }
-            }          
+            }
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1F543B67-5971-40F0-AC94-18AE474E79DC}</ProjectGuid>
+    <ProjectGuid>{89FB16CE-C441-4B4B-90E0-E12ED43DD47A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TCP_Client</RootNamespace>
-    <AssemblyName>TCP_Client</AssemblyName>
+    <RootNamespace>tptcpserver</RootNamespace>
+    <AssemblyName>tptcpserver</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TcpServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

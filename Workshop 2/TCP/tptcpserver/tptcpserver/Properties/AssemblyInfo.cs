@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TCP_Server")]
+[assembly: AssemblyTitle("tptcpserver")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TCP_Server")]
+[assembly: AssemblyProduct("tptcpserver")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3beea9f8-612c-4f60-9f8e-315ecb02120c")]
+[assembly: Guid("89fb16ce-c441-4b4b-90e0-e12ed43dd47a")]
 
 // Version information for an assembly consists of the following four values:
 //

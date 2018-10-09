@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Net.Sockets;
 
-namespace TCP_Client
+namespace tptcpclient
 {
     class Program
     {
@@ -16,7 +16,7 @@ namespace TCP_Client
 
             byte[] receivedBytes = new byte[128];
 
-            networkStream.Read(receivedBytes,0, receivedBytes.Length);
+            networkStream.Read(receivedBytes, 0, receivedBytes.Length);
 
             int timeStamp = BitConverter.ToInt32(receivedBytes, 0);
 

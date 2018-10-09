@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace TCP_Server
+namespace tptcpserver
 {
     /// <summary>
     /// ITIFN E18
@@ -34,7 +34,7 @@ namespace TCP_Server
         public void StopListeningForTcpClient()
         {
             _running = false;
-            _server.Stop();      
+            _server.Stop();
         }
 
         private async Task AcceptIncomingConnections()
@@ -43,13 +43,13 @@ namespace TCP_Server
             {
                 TcpClient incomingClient = await _server.AcceptTcpClientAsync();
                 Thread t = new Thread(HandleIncomingConnection);
-                t.Start(incomingClient);              
+                t.Start(incomingClient);
             }
         }
 
         public void HandleIncomingConnection(object obj)
         {
-            TcpClient incomingClient = (TcpClient) obj;
+            TcpClient incomingClient = (TcpClient)obj;
 
             Console.WriteLine("New connection from " + incomingClient.Client.RemoteEndPoint);
 
@@ -57,7 +57,7 @@ namespace TCP_Server
 
             DateTime now = DateTime.Now;
 
-            int timestamp = (int) now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            int timestamp = (int)now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
 
             Console.WriteLine("Timestamp " + timestamp + " sent to client. Readable for humans this is the date " +
                               now);
