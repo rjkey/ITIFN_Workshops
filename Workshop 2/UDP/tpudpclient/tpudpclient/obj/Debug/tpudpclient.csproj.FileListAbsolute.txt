@@ -1,7 +1,0 @@
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\bin\Debug\tpudpclient.exe.config
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\bin\Debug\tpudpclient.exe
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\bin\Debug\tpudpclient.pdb
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\obj\Debug\tpudpclient.csprojAssemblyReference.cache
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\obj\Debug\tpudpclient.csproj.CoreCompileInputs.cache
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\obj\Debug\tpudpclient.exe
-c:\users\jbbuu\source\repos\tpudpclient\tpudpclient\obj\Debug\tpudpclient.pdb
