@@ -7,7 +7,7 @@ namespace tptcpclient
     {
         static void Main(string[] args)
         {
-            int port = 1234;
+            int port = 37;
             string ipAddr = args[0];
 
             TcpClient client = new TcpClient(ipAddr, port);

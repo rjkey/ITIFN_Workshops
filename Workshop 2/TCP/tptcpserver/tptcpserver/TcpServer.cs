@@ -14,19 +14,17 @@ namespace tptcpserver
     {
         private readonly TcpListener _server;
         private readonly int _port = 37;
-        private readonly IPAddress _ipAddress;
         private bool _running = false;
 
         public TcpServer()
         {
-            _ipAddress = IPAddress.Parse("127.0.0.1");
-            _server = new TcpListener(_ipAddress, _port);
+            _server = new TcpListener(_port);
         }
 
         public async void StartListeningForTcpClient()
         {
             _server.Start();
-            Console.WriteLine("TCP server started at " + _ipAddress + ":" + _port);
+            Console.WriteLine("TCP server started at " + _server.LocalEndpoint);
             _running = true;
             await AcceptIncomingConnections();
         }
