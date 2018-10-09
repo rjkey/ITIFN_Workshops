@@ -1,0 +1,6 @@
+c:\users\jonas\source\repos\tpudpserver\tpudpserver\bin\Debug\tpudpserver.exe.config
+c:\users\jonas\source\repos\tpudpserver\tpudpserver\bin\Debug\tpudpserver.exe
+c:\users\jonas\source\repos\tpudpserver\tpudpserver\bin\Debug\tpudpserver.pdb
+c:\users\jonas\source\repos\tpudpserver\tpudpserver\obj\Debug\tpudpserver.csproj.CoreCompileInputs.cache
+c:\users\jonas\source\repos\tpudpserver\tpudpserver\obj\Debug\tpudpserver.exe
+c:\users\jonas\source\repos\tpudpserver\tpudpserver\obj\Debug\tpudpserver.pdb
