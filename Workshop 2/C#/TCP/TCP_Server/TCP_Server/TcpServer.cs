@@ -19,7 +19,7 @@ namespace TCP_Server
 
         public TcpServer()
         {
-            _ipAddress = IPAddress.Parse("192.168.86.30");
+            _ipAddress = IPAddress.Parse("127.0.0.1");
             _server = new TcpListener(_ipAddress, _port);
         }
 
