@@ -18,9 +18,9 @@ namespace tptcpclient
 
             networkStream.Read(receivedBytes, 0, receivedBytes.Length);
 
-            int timeStamp = BitConverter.ToInt32(receivedBytes, 0);
+            uint timeStamp = BitConverter.ToUInt32(receivedBytes, 0);
 
-            DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Local);
+            DateTime dtDateTime = new DateTime(1900, 1, 1, 0, 0, 0, 0, DateTimeKind.Local);
             dtDateTime = dtDateTime.AddSeconds(timeStamp).ToLocalTime();
 
             Console.WriteLine("Timestamp received from server: " + timeStamp +

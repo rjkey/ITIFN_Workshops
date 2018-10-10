@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace tpudpserver
 {
@@ -16,9 +12,9 @@ namespace tpudpserver
 
         public UdpServer()
         {
-            _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-            var localEndPoint = new IPEndPoint(IPAddress.Any, PortNumber);
-            _serverSocket.Bind(localEndPoint);
+            _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp); //Udp setup of socket
+            var localEndPoint = new IPEndPoint(IPAddress.Any, PortNumber); //Lister on all available ips and port 37
+            _serverSocket.Bind(localEndPoint); //Bind the socket
         }
 
         public void StartServer()

@@ -55,7 +55,7 @@ namespace tptcpserver
 
             DateTime now = DateTime.Now;
 
-            int timestamp = (int)now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            uint timestamp = (uint)now.Subtract(new DateTime(1900, 1, 1, 0, 0, 0)).TotalSeconds;
 
             Console.WriteLine("Timestamp " + timestamp + " sent to client. Readable for humans this is the date " +
                               now);

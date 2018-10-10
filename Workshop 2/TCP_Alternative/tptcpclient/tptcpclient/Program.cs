@@ -1,7 +1,8 @@
 ﻿using System;
-namespace tpudpclient
+
+namespace tptcpclient
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -10,7 +11,7 @@ namespace tpudpclient
                 Console.WriteLine("Please provide an IP address.");
                 Environment.Exit(1);
             }
-            var client = new ClientUdp();
+            var client = new ClientTcp();
             client.StartQuery(args[0]);
         }
     }
